@@ -1,0 +1,237 @@
+body.classic{
+  background-color: #ececdd;
+}
+body.purple{
+  background-color: #fee7c7;
+}
+body.neon{
+  background-color: #1a012a;
+  color: #ececec;
+  opacity: 0.9;
+}
+.container.diag-container{
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(45deg);
+  margin: -175px 0 0 -175px;
+  width: 350px;
+  height: 350px;
+}
+
+/* ==========
+ four buttons
+========== */
+.float-left{
+  float: left;
+}
+.float-right{
+  float: right;
+}
+.q-container{
+  background-color: #fff;
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+}
+.quadrant{
+  width: 170px;
+  height: 170px;
+  border-radius: 10px;
+  position: relative;
+}
+.top-row::after{
+  height: 10px;
+  content: "";
+  display: block;
+  clear: both;
+}
+.row::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ===========
+ classic theme
+=========== */
+.classic [id="0"]{
+  background-color: #f9bf3b;
+}
+.classic [id="1"]{
+  background-color: #d91e18;
+}
+.classic [id="2"]{
+  background-color: #1f3ac3;
+}
+.classic [id="3"]{
+  background-color: #26b63b;
+}
+.classic .light-active{
+  opacity: 0.3;
+}
+/* ==========
+ purple theme
+========== */
+.purple [id="0"]{
+  background-color: #a093a1;
+}
+.purple [id="1"]{
+  background-color: #533b55;
+}
+.purple [id="2"]{
+  background-color: #826e83;
+}
+.purple [id="3"]{
+  background-color: #3a213b;
+}
+.purple .light-active{
+  opacity: 0.3;
+}
+/* ========
+ neon theme
+======== */
+.neon [id="0"]{
+  background-color: #dd1502;
+}
+.neon [id="0"].light-active{
+  background-color: #ffdddd;
+  box-shadow: 0 0 50px 20px #ff3724;
+}
+.neon [id="1"]{
+  background-color: #ff8a1f;
+}
+.neon [id="1"].light-active{
+  background-color: #ffeedd;
+  box-shadow: 0 0 50px 20px #ff8a1f;
+}
+.neon [id="2"]{
+  background-color: #bc23d5;
+}
+.neon [id="2"].light-active{
+  background-color: #eeddff;
+  box-shadow: 0 0 50px 20px #bc23d5;
+}
+.neon [id="3"]{
+  background-color: #5fdee6;
+}
+.neon [id="3"].light-active{
+  background-color: #dddeff;
+  box-shadow: 0 0 50px 20px #5fdee6;
+}
+.light-active{
+  z-index: 1;
+}
+/* =================
+ game & option panel
+================= */
+.middle.middle-row{
+  z-index: 10;
+  border-radius: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'PT Sans', sans-serif;
+  transform: rotate(-45deg);
+  text-align: center;
+  width: 190px;
+  height: 190px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -95px 0 0 -95px;
+  cursor: default;
+}
+.classic .middle.middle-row{
+  background-color: #ececdd;
+}
+.purple .middle.middle-row{
+  background-color: #fee7c7;
+}
+.neon .middle.middle-row{
+  background-color: #1a012a;
+}
+#count{
+  font-weight: normal;
+  margin: 74px 0px 0px 0px;
+}
+.hidden{
+  display:none;
+}
+ul{
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+  margin-top: 50px;
+}
+.sub-title>h3{
+  font-weight: normal;
+  margin: -20px 0 8px 0;
+}
+li{
+  font-size: 15px;
+  list-style-type: none;
+  padding-bottom: 1%;
+}
+.li-item:hover{
+  opacity: 0.4;
+}
+.fa.li-item{
+  position: absolute;
+  height: 18px;
+  width: 20px;
+  top: 100%;
+  left: 50%;
+  margin: -45px 0 0 -10px;
+}
+#stop{
+  font-variant: small-caps;
+}
+
+/* ===========================
+ toggle slider for strict mode
+=========================== */
+.slider.round::before{
+  border-radius: 50%;
+}
+.slider.round{
+  border-radius: 10px;
+}
+.switch{
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+}
+.switch input{
+  display: none;
+}
+.slider{
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+}
+.slider::before{
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  left: 2px;
+  bottom: 1px;
+  background-color: white;
+}
+.neon input:checked +.slider{
+  background-color: #00bcbc;
+}
+input:checked +.slider{
+  background-color: #000;
+}
+input:checked + .slider::before{
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(8px);
+}

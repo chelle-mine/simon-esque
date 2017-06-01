@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Do as I do.</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans|Lato" rel="stylesheet">
+    <script src="script.js"></script>
+
+
+  </head>
+
+  <body class="classic" id="theme-target">
+    <div class="container">
+      <div class="container diag-container">
+        <div class="row top-row">
+          <div class="q-container float-left">
+            <div class="quadrant float-left classic" id="0"></div>
+          </div>
+          <div class="q-container float-right">
+            <div class="quadrant float-right classic" id="1"></div>
+          </div>
+        </div>
+        <div class="middle middle-container">
+        </div>
+        <div class="middle middle-row" id="count-panel">
+          <h1 id="count">start</h1>
+          <i class="fa fa-gear li-item" id="options"></i>
+        </div>
+        <div class="middle middle-row hidden" id="options-panel">
+          <ul class="options-list">
+            <li class="sub-title">
+              <h3>Options</h3></li>
+            <li><span class="li-item" id="restart">restart</span></li>
+            <li><span class="li-item" id="mode-label">strict mode</span>
+              <label class="switch">
+                    <input type="checkbox" class="mode" id="mode-switch">
+                    <div class="slider round"></div>
+                  </label>
+            </li>
+            <li><span class="li-item" id="themes">themes <i class="fa fa-paint-brush"></i></span></li>
+            <li><span class="li-item" id="stop">stop</span></li>
+            <li><i class="fa fa-arrow-left li-item" id="back-ct"></i></li>
+          </ul>
+        </div>
+        <div class="middle middle-row hidden" id="themes-panel">
+          <ul class="themes-list">
+            <li class="sub-title">
+              <h3>Themes</h3>
+            </li>
+            <li><span class="li-item theme-select" id="classic">classic</span></li>
+            <li><span class="li-item theme-select" id="neon">neon</span></li>
+            <li><span class="li-item theme-select" id="purple">monopurple</span></li>
+            <li><i class="fa fa-arrow-left li-item" id="back-opt"></i></li>
+          </ul>
+        </div>
+
+        <div class="row bottom-row">
+          <div class="q-container float-left">
+            <div class="quadrant float-left classic" id="3"></div>
+          </div>
+          <div class="q-container float-right">
+            <div class="quadrant float-right classic" id="2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
